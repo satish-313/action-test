@@ -2,15 +2,15 @@ const express = require("express");
 
 app = express();
 
-app.get("/", (req, res) => {
+app.get("/api", (req, res) => {
   res.send("hello from root page");
 });
 
-app.get("/test", (req, res) => {
+app.get("/api/test", (req, res) => {
   res.send("hello again from test");
 });
 
-app.get("/prod", (req, res) => {
+app.get("/api/prod", (req, res) => {
   res.send("hello from prod page");
 });
 
